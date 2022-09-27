@@ -1,0 +1,17 @@
+@startuml
+entity GameObject
+component NetworkGameObject
+component NetworkBehaviourA
+component NetworkBehaviourB
+component OtherComponent
+
+
+GameObject -- NetworkGameObject
+GameObject -- NetworkBehaviourA
+GameObject -- NetworkBehaviourB
+GameObject -- OtherComponent
+NetworkBehaviourA -- NetworkVariableA
+NetworkBehaviourA -- NetworkVariableB
+NetworkBehaviourB -- NetworkVariableC
+NetworkBehaviourB -- NetworkVariableD
+@enduml
